@@ -51,16 +51,16 @@ Here is a list of SMD parts in my design.
 - 0.1uF capacitors (1608 package)
 - BLM18R (ferrite bead, 1608 package)
 
-Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the boards. Should also work fine.
+Concerning the resistor size, I am usually using small-size resistors, about half the length of the usual size, so they need less space on the PCB. If you want to use my Gerber files, you have to consider that fact. You might still use normal size resistors and put them in a standing position on the board. Should also work fine.
 
 ## Schematics
-Due to the fact that the pin layout of the two package versions for the WM8731 chip are different, I uploaded two versions of the module schmatic in the folder "Schematic". The file "Schematic_Rings.pdf" contains the layout for the QFN package version, while the file "Schematic_Rings_WM8731SSOP28.pdf" is the one with the SSOP package.
+Due to the fact that the pin layout of the two package versions for the WM8731 chip are different, I uploaded two versions of the module schmatic in the folder "Schematic". The file "Schematic.pdf" contains the layout for the QFN package version, while the file "Schematic_WM8731SSOP28.pdf" is the one with the SSOP package.
 
 ## Firmware
 I shared the .hex files for the STM32F405 chip (bootloader and main) in the folder Firmware.
 
 ## Programming
-The main PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
+The PCB contains connection points for both connector types for programming STM32 chips, JTAG and UART. Those can be used for standard pins with 2.54mm distance. Depending on the available connector, you only need one of those two connection point groups. However, I only tested the UART connection. The JTAG connection points have been added to the PCB by following the Mutable Instruments original design.
 
 Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
 
@@ -72,9 +72,10 @@ The calibration procedure is the same, as the one for the original module from M
 
 1. Disconnect all CV inputs.
 2. Connect the note CV output of a well-calibrated keyboard interface or MIDI-CV converter to the V/OCT input.
-3. Connect a patch cable to the Frequency CV input. Leave the other end of the cable unplugged (this prevents the internal connection to +/- 1 semitone to be activated).
-4. Hold both the polyphony and resonator type buttons for two seconds to enter the calibration procedure. The first LED will blink.
+3. Set all attenuverters to their minimum position (7 o'clock), then hold the PLAY button for five seconds. This is the "secret handshake" to enter the calibration procedure. The exciter LED blinks to indicate that calibration is in progress.
+4. Connect a patch cable to the 1V/OCT CV input.
 5. Play a C2 note, or send a 1V voltage from your CV source.
-6. Press the polyphony button. The second LED will blink.
+6. Press the PLAY button. The second LED will blink.
 7. Play a C4 note, or send a 3V voltage from your CV source.
-8. Press the polyphony button.
+8. Press the PLAY button.
+9. To avoid entering the calibration mode by mistake, make sure that at least one attenuverter is moved to another position.
