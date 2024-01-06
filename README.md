@@ -76,7 +76,7 @@ The calibration procedure is the same, as the one for the original module from M
 3. Set all attenuverters to their minimum position (7 o'clock), then hold the PLAY button for five seconds. This is the "secret handshake" to enter the calibration procedure. The exciter LED blinks to indicate that calibration is in progress.
 4. Connect a patch cable to the 1V/OCT CV input.
 5. Play a C2 note, or send a 1V voltage from your CV source.
-6. Press the PLAY button. The second LED will blink.
+6. Press the PLAY button. The resonator LED will blink.
 7. Play a C4 note, or send a 3V voltage from your CV source.
 8. Press the PLAY button.
 9. To avoid entering the calibration mode by mistake, make sure that at least one attenuverter is moved to another position.
