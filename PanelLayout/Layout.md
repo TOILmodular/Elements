@@ -3,7 +3,7 @@
 The panel dimensions provided in the section "Original Design" below are based on my own module build, since I am not following the standard HP (1HP eq. 5.08mm) size. An alternative by building an HP-standard size panel can be found in the section "HP Standard Design" further below.
 
 ### Original Design
-Coordinates given in the table fit to the layout of components given in the PCBc in folder GerberFiles.
+Coordinates given in the table fit to the layout of components given in the PCBs in folder GerberFiles.
 
 Panel size: 205mm x 128.5mm
 
