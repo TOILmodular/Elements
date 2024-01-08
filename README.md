@@ -1,29 +1,28 @@
 # Elements - Modal Synthesizer Eurorack Module
 A clone of the Mutable Instruments Elements module.
 
-<img height="500" src="https://github.com/TOILmodular/Rings/assets/97026614/f056a97e-0b70-432f-b60d-c904844adf8e">
-<img height="500" src="https://github.com/TOILmodular/Rings/assets/97026614/097c8d2c-e369-4c25-8888-0f762ddeb539">
-
-<img height="500" src="https://github.com/TOILmodular/Rings/assets/97026614/f87f9dfb-eaac-4990-a2e8-9bebd8624e4e">
-<img height="500" src="https://github.com/TOILmodular/Rings/assets/97026614/0d7e7f15-f82f-4284-a7eb-4ad3b31c1fcc">
+<img height="500" src="https://github.com/TOILmodular/Elements/assets/97026614/4687b89c-681c-4c4b-8c73-d48bae663a28">
+<img height="500" src="https://github.com/TOILmodular/Elements/assets/97026614/23f0c5e8-c4ab-4969-98cc-77599d601d43">
+<img height="500" src="https://github.com/TOILmodular/Elements/assets/97026614/fddc71a2-dffb-41a0-9266-6cd6d71d2bf0">
+<img height="500" src="https://github.com/TOILmodular/Elements/assets/97026614/3e1a9ce1-469e-4272-beff-6149204b9906">
 
 ## Module Build and PCBs
 In the folder GerberFiles, I added three different versions for the PCB, "original", "Thonk" and "WM8731SSOP28".
 Reason is that for my own module, I am using specific potentiometers - 16K4 series from Supertech Electronics - and 3.5mm jack sockets - MJ-355 from Marushin - available at my local electronics shop.
 
-<img width="300" alt="Rings_CtrlPCB_Orig" src="https://github.com/TOILmodular/Rings/assets/97026614/e15909db-27cd-4b87-87d0-768e644b5d9b">
+<img width="600" alt="CtrlPCB_Original" src="https://github.com/TOILmodular/Elements/assets/97026614/000e6fdb-cbc9-4740-aae5-340b66989f13">
 
 However, since most DIY projects for Eurorack modules out there are using potentiometers from ALPHA and so-called THONKICONN jacks, as they are provided by Thonk in the UK, I also created another control board PCB version, called "Thonk", with footprints for those components.
 
-<img width="300" alt="Rings_CtrlPCB_Thonk" src="https://github.com/TOILmodular/Rings/assets/97026614/117891eb-6470-43bd-babe-d4ba82fd6619">
+<img width="600" alt="CtrlPCB_Thonk" src="https://github.com/TOILmodular/Elements/assets/97026614/e34d20f2-198c-413d-b361-9057ca5e1324">
 
 The third version "WM8731SSOP28" is added due to the fact that a different version of the audio codec chip WM8731 is used. The other two versions are using a WM8731 with a QFN package, while version "WM8731SSOP28" is using the SSOP package of that chip. It also contains the "Thonk" version footprints for the potentiometers and jacks. You will find more details about the reason for that third version in the section "Additional Information about specific Components" below.
 
 NOTE: I did not test the correctness of the "WM8731SSOP28".
 
-<img width="300" src="https://github.com/TOILmodular/Rings/assets/97026614/cc987cb5-5e40-4eaa-99be-051f274a252c">
+<img width="600" src="https://github.com/TOILmodular/Elements/assets/97026614/d620c31d-393b-4ef4-afc4-2db747c01bf9">
 
-<img width="300" src="https://github.com/TOILmodular/Rings/assets/97026614/f701b4c2-d4a2-4572-9189-0c2ff38a891d">
+<img width="600" src="https://github.com/TOILmodular/Elements/assets/97026614/9c3ab0ac-9ab9-4403-a46c-e54bea724026">
 
 I created the Gerber files with the online tool EasyEDA and ordered it at JLCPCB.
 
@@ -65,8 +64,8 @@ The PCB contains connection points for both connector types for programming STM3
 
 Besides that, there are two connection points for putting the chip into boot mode, which is needed for loading the bootloader file. Just solder a 1x2 pin with standard 2.54mm distance to connection points labeled "BOOT". For activating the boot mode, place a jumper onto the pins. As soon as the bootloder is uploaded, remove the jumper to put the chip into operation mode, so the main code can be uploaded.
 
-<img width="245" alt="ProgrammingConnectors1" src="https://github.com/TOILmodular/Rings/assets/97026614/edbec5af-546f-416c-a880-ef491883d5b6">
-<img width="312" alt="ProgrammingConnectors2" src="https://github.com/TOILmodular/Rings/assets/97026614/67825798-1c34-43f0-ae9a-2b764616fbf2">
+<img height="300" src="https://github.com/TOILmodular/Elements/assets/97026614/255255a7-9316-4279-9266-fea061fcbd3d">
+<img height="300" src="https://github.com/TOILmodular/Elements/assets/97026614/bce8bff2-a8f9-4a1c-ac3e-c7a20df303ca">
 
 ## Calibration
 The calibration procedure is the same, as the one for the original module from Mutable Instruments.
