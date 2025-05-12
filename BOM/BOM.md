@@ -26,7 +26,6 @@
 | Capacitor Ceramic | 220pF | 2 | |
 | Capacitor Ceramic | 18pF | 4 | |
 | Diode | 1N5819 | 2 | |
-| Diode Array	| BAT54ST	| 1	| SMD (SOT-523). CAUTION: "ST" is important! There are different BAT54 versions |
 | Diode | LED | 3 | |
 | Transistor | MMBT3904 | 1 | SMD (SOT-23) |
 | Op Amp | MCP6004 | 3 | |
