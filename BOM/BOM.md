@@ -21,7 +21,7 @@
 | Capacitor Electrolytic | 10uF | 5 | |
 | Capacitor Ceramic | 2.2uF | 2 | |
 | Capacitor Ceramic | 1uF | 4 | |
-| Capacitor Ceramic | 0.1uF | 29 | SMD (1608) |
+| Capacitor Ceramic | 0.1uF | 25 | SMD (1608) |
 | Capacitor Ceramic | 3300pF | 13 | |
 | Capacitor Ceramic | 220pF | 2 | |
 | Capacitor Ceramic | 18pF | 4 | |
